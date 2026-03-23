@@ -1,22 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Full-screen Map -->
     <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <Button
+    <!-- Search bar card overlaid on top of map -->
+    <LinearLayout
+        android:id="@+id/searchContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:orientation="vertical"
+        android:background="@android:color/transparent">
+
+        <!-- AutocompleteFragment host card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:layout_marginBottom="6dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:cardCornerRadius="10dp">
+
+            <!-- Autocomplete Fragment will be injected here programmatically -->
+            <FrameLayout
+                android:id="@+id/autocompleteFragment"
+                android:layout_width="match_parent"
+                android:layout_height="56dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Selected place label -->
+        <TextView
+            android:id="@+id/tvSelectedPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CC000000"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:visibility="gone"
+            android:text="" />
+
+    </LinearLayout>
+
+    <!-- Confirm button pinned to bottom -->
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnConfirmDest"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
         android:text="Confirm Destination"
         android:visibility="gone"
         android:backgroundTint="#6200EE"
-        android:textColor="#FFFFFF" />
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="14dp" />
 
 </RelativeLayout>

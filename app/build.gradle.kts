@@ -85,5 +85,8 @@ dependencies {
 
         // Add the dependency for Cloud Firestore (Logging alerts)
         implementation("com.google.firebase:firebase-firestore-ktx")
+
+        // Google Places SDK (for search-based destination picker)
+        implementation("com.google.android.libraries.places:places:3.4.0")
     }
 }
