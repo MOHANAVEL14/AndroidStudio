@@ -115,6 +115,7 @@ class EmergencyContactActivity : AppCompatActivity() {
         }
     }
 
+    @Suppress("DEPRECATION")
     private fun launchContactPicker() {
         val intent = Intent(Intent.ACTION_PICK, ContactsContract.CommonDataKinds.Phone.CONTENT_URI)
         startActivityForResult(intent, PICK_CONTACT_REQUEST)

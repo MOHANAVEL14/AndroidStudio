@@ -359,6 +359,7 @@ class ShakeService : LifecycleService(), SensorEventListener {
             }
     }
 
+    @Suppress("DEPRECATION")
     private fun sendSmsToGuardians(fullMessage: String) {
         // This pulls from the list you just redesigned!
         val contacts = ContactManager(this).getContacts()
@@ -438,6 +439,7 @@ class ShakeService : LifecycleService(), SensorEventListener {
         }, ContextCompat.getMainExecutor(this))
     }
 
+    @Suppress("DEPRECATION")
     private fun startAudioRecording() {
         val prefs = getSharedPreferences(AppConstants.PREFS_NAME, Context.MODE_PRIVATE)
         if (!prefs.getBoolean(AppConstants.KEY_ENABLE_AUDIO, false)) return

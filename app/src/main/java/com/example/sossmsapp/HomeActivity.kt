@@ -10,6 +10,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.sossmsapp.ai.security.PinVerificationDialog
 import androidx.appcompat.widget.SwitchCompat
+import androidx.core.content.ContextCompat
 import com.example.sossmsapp.features.paniccall.PanicCallManager // NEW: Import Manager
 import com.google.android.material.button.MaterialButton // NEW: For Material 3 buttons
 
@@ -137,10 +138,10 @@ class HomeActivity : AppCompatActivity() {
     private fun updateStatusText(textView: TextView, isEnabled: Boolean) {
         if (isEnabled) {
             textView.text = "Safe Mode is ON. Monitoring in background"
-            textView.setTextColor(resources.getColor(android.R.color.holo_green_dark))
+            textView.setTextColor(ContextCompat.getColor(this, android.R.color.holo_green_dark))
         } else {
             textView.text = "Safe Mode is OFF"
-            textView.setTextColor(resources.getColor(android.R.color.holo_red_dark))
+            textView.setTextColor(ContextCompat.getColor(this, android.R.color.holo_red_dark))
         }
     }
 
