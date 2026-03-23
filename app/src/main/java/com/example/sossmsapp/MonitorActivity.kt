@@ -41,7 +41,7 @@ class MonitorActivity : AppCompatActivity() {
                         Accuracy: ${loc.accuracy} meters
                         
                         SOS Link Preview:
-                        http://maps.google.com/maps?q=${loc.latitude},${loc.longitude}
+                        https://maps.google.com/maps?q=${loc.latitude},${loc.longitude}
                         
                         Keep this screen open for 10 seconds to 
                         calibrate the SOS trigger.

@@ -354,7 +354,7 @@ class ShakeService : LifecycleService(), SensorEventListener {
         fusedLocationClient.getCurrentLocation(Priority.PRIORITY_HIGH_ACCURACY, cts.token)
             .addOnCompleteListener { task ->
                 val loc = task.result
-                val mapLink = if (loc != null) "\nStatic: http://googleusercontent.com/maps.google.com/maps?q=${loc.latitude},${loc.longitude}" else ""
+                val mapLink = if (loc != null) "\nStatic: https://maps.google.com/maps?q=${loc.latitude},${loc.longitude}" else ""
                 sendSmsToGuardians("SOS Alert! I need help immediately. Track my live location here: $trackingLink $mapLink")
             }
     }
