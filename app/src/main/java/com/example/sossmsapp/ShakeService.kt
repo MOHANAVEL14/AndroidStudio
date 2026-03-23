@@ -348,7 +348,7 @@ class ShakeService : LifecycleService(), SensorEventListener {
     @SuppressLint("MissingPermission")
     private fun startSmsFlow() {
         val sessionId = liveLocationManager.startTracking()
-        val trackingLink = "https://sossmsapp.web.app/track?id=$sessionId"
+        val trackingLink = "https://p-key-rjaeb069a2cj.web.app/track?id=$sessionId"
         
         val cts = CancellationTokenSource()
         fusedLocationClient.getCurrentLocation(Priority.PRIORITY_HIGH_ACCURACY, cts.token)
