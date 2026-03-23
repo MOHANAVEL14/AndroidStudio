@@ -82,6 +82,10 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+        <activity
+            android:name=".ActiveAlertActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
 
         <service
             android:name=".ShakeService"

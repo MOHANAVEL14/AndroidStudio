@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#D32F2F"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🚨"
+        android:textSize="80sp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DANGER ALERT ACTIVE"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your live location is currently being transmitted to your emergency contacts."
+        android:textColor="#FFEBEE"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginBottom="48dp" />
+
+    <Button
+        android:id="@+id/btnIAmSafe"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="I AM SAFE"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#D32F2F"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="8dp" />
+        
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pressing this will stop live location tracking and notify your device that you are secure."
+        android:textColor="#FFCDD2"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
