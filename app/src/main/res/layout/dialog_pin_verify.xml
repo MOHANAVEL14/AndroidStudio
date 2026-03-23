@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Secret PIN"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#B71C1C"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etVerifyPin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="****"
+        android:inputType="numberPassword"
+        android:maxLength="4"
+        android:letterSpacing="0.5"
+        android:textAlignment="center"
+        android:textSize="28sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Incorrect PIN will keep the SOS active."
+        android:textAlignment="center"
+        android:textColor="#757575"
+        android:textSize="12sp"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

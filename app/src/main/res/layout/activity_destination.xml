@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Destination"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/etDestName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Destination Name (e.g. Home)" />
+
+    <EditText
+        android:id="@+id/etLat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Latitude (e.g. 13.0827)"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <EditText
+        android:id="@+id/etLng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Longitude (e.g. 80.2707)"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <Button
+        android:id="@+id/btnSaveDest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Coordinates"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:gravity="center"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:id="@+id/btnUseCurrent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Use Current Location"
+        android:backgroundTint="#FF5722" />
+
+</LinearLayout>

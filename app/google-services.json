@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1023817398127",
+    "project_id": "p-key-sadw8b5ihftl",
+    "storage_bucket": "p-key-sadw8b5ihftl.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023817398127:android:b7a0cd028046c7a08b1a9a",
+        "android_client_info": {
+          "package_name": "com.example.sossmsapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4e33HHhBbWOkeFsPjaRBrMLkCy1Nuu7A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
